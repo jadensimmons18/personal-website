@@ -18,18 +18,24 @@
                 <li><a href="index.html#contact-me">Contact Me</a></li>
             </ul>
         </nav>
-        <img src="https://t2informatik.de/en/wp-content/uploads/sites/2/2023/03/compiler.png" alt="image of compiler from online">
         <h1>Custom Virtual Machine & Language Parser</h1>
     </header>
     <main>
-        <h2 class="overview">Overview:</h2>
-        <p>
-            This project is a full-stack implementation of a compiler and virtual machine pipeline for the PL/0 programming language — a simplified educational subset of Pascal. It models the entire lifecycle of program execution, starting from raw source code and ending in low-level execution on a custom-built stack-based virtual computer.
+        <section>
+            
+            <p><strong>Language:</strong> C (C11)</p>
+            <p><strong>Concepts:</strong> Compilers, Virtual Machines, Parsing, Code Generation, Stack Architecture</p>
+            <p>
+                I developed a full compiler pipeline and virtual machine for the PL/0 programming language, a simplified Pascal-like language commonly used in compiler education. This project simulates the complete lifecycle of program execution, transforming raw source code into executable instructions and running them on a custom-built stack machine.
 
-            Rather than focusing on a single stage of compilation, this system demonstrates how programming languages are translated, validated, and executed at a systems level, providing a complete view into how real-world compilers and runtimes operate under the hood.
+    The system consists of three core components: a lexical analyzer, a recursive descent parser with integrated code generation, and a virtual machine that executes the resulting instructions. The lexical analyzer processes raw input and converts it into structured tokens while supporting comment handling and error detection. The parser validates program structure using recursive descent techniques and generates intermediate P-Code instructions representing executable logic. These instructions are then executed by a custom virtual machine that simulates a stack-based processor with its own instruction set, registers, and activation record management.
 
-            The architecture is modular and divided into three major components that work together as a cohesive toolchain:
-        </p>
+    This project demonstrates low-level programming concepts including memory management, symbol table design, static scoping, stack frame construction, and control flow execution. It also required implementing procedure calls, nested scopes, conditional branching, and loop handling, closely modeling the behavior of real-world compilers and runtime systems.
+            </p>
+        </section>
+        
+
+        <h2><a href="https://github.com/jadensimmons18/Custom-Virtual-Machine-Language-Parser" target="_blank">Check out the GitHub</h2>
     </main>
 </body>
 </html>
